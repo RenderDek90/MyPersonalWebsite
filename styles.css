@@ -630,6 +630,49 @@
   .footer p {
     margin: 0px;
   }
+
+  .content-aboutme {
+    display: block;
+    justify-content: center;
+  }
+
+  .content-aboutme p {
+    font-size: 12px;
+  }
+
+  .photo2 {
+    width: 40%;
+  }
+
+  #bouncy_balls2 {
+    z-index: -5;
+    opacity: 30%;
+    /* top: ; */
+    left: auto;
+  }
+
+  .content-1-projects {
+    padding: 0px;
+  }
+
+  .content-1-projects h1 {
+    font-size: 20px;
+  }
+
+  .card-body h3 {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+  .buttons-projects {
+    font-size: 12px;
+  }
+
+  .body3 {
+    margin: 20px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
