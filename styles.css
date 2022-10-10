@@ -299,6 +299,40 @@
   margin-top: 20px;
 }
 
+.dropdown-button {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button .dropdown-content a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.507);
+  position: absolute;
+  border-style: outset;
+  border-color: #23d5ab;
+  min-width: 200px;
+  z-index: 100;
+  padding: 1px 5px;
+}
+
 .buttons {
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -367,11 +401,13 @@
 
 .card-projects {
   padding: 0px 10px;
+  width: 50%;
 }
 
 .projects-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card-img-top2 {
@@ -566,6 +602,31 @@
   .body {
     overflow: visible;
     height: auto;
+  }
+
+  .body3 {
+    margin: 0px;
+  }
+
+  .projects-cards {
+    display: block;
+    justify-content: space-evenly;
+  }
+
+  .card-projects {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    align-self: center;
+  }
+
+  .cardd img {
+    width: 100%;
+  }
+
+  .socmed-icon {
+    font-size: 20px;
   }
 
   .photo {
