@@ -721,10 +721,12 @@
 }
 
 .journey-photo {
-  width: 200px;
   height: 200px;
+  width: 200px;
+  margin: 20px;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.226);
 }
 
 @keyframes picture-3 {
@@ -929,6 +931,20 @@
 
   .dropdown-content a {
     text-align: left;
+  }
+
+  .content-myJourney {
+    display: block;
+  }
+
+  .content-photo {
+    font-size: 12px;
+    padding: 0px;
+  }
+
+  .journey-photo {
+    width: 40%;
+    height: auto;
   }
 }
 
