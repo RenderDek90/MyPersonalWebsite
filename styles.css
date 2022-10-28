@@ -497,6 +497,7 @@
 
 .cardd {
   border-radius: 1rem;
+  height: 100%;
 }
 
 .card-text {
@@ -505,12 +506,14 @@
 
 .card-projects {
   padding: 0px 10px;
-  width: 50%;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .projects-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
 }
 
@@ -988,9 +991,14 @@
     flex-flow: column;
   }
 
+  .dropdown-content {
+    position: relative;
+    margin-bottom: 20px;
+  }
   .buttons2 {
+    display: block;
     text-align: center;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .footer {
