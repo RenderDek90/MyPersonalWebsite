@@ -551,7 +551,7 @@
 .content-aboutme p {
   color: white;
   font-weight: 0px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .photo2 {
@@ -715,7 +715,7 @@
 }
 
 .content-photo p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .content-title p {
@@ -729,7 +729,7 @@
 
 .journey-photo {
   height: 200px;
-  width: 200px;
+  width: auto;
   margin: 20px;
   border-radius: 50%;
   backdrop-filter: blur(20px);
