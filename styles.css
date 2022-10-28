@@ -618,15 +618,19 @@
 }
 
 .creativity-bar {
-  width: 80%;
+  width: 90%;
 }
 
 .leadership-bar {
-  width: 75%;
+  width: 82%;
 }
 
 .programming-bar {
-  width: 70%;
+  width: 80%;
+}
+
+.communication-bar {
+  width: 84%;
 }
 
 .music-bar {
