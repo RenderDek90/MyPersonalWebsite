@@ -274,7 +274,7 @@
 }
 
 .content-1-projects {
-  padding: 0 50px;
+  padding: 0px 50px;
   width: 100%;
 }
 
@@ -517,6 +517,7 @@
 .projects-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2%;
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
 }
