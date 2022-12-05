@@ -1,0 +1,244 @@
+/* .menu-open-page1 {
+  width: 200px;
+  height: 50px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  transform: rotateZ(-90deg);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: right ease 1s;
+}
+
+.menu-open-page2 {
+  width: 200px;
+  height: 50px;
+  z-index: 11;
+  background-color: blueviolet;
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  transform: rotateZ(90deg);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.page1 {
+  background: linear-gradient(-45deg, #a852ee, #783ce7, #23a6d5);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+  right: 2500px;
+  animation-delay: 4s;
+  opacity: 80%;
+  transition: right ease 1s;
+}
+
+.page2 {
+  background: linear-gradient(-45deg, #a852ee, #783ce7, #23a6d5);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 12;
+  left: 2500px;
+  animation-delay: 4s;
+  opacity: 80%;
+  transition: left ease 1s;
+}
+
+.menu-open-page2:hover ~ .page2 {
+  left: 60px;
+}
+
+.menu-open-page1:hover ~ .page1,
+.menu-open-page1 {
+  right: 60px;
+}
+
+.content-page1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 200px;
+  color: white;
+}
+
+@keyframes page1 {
+  0% {
+    right: 2500px;
+  }
+  100% {
+    right: 200px;
+  }
+} */
+
+.open-page1,
+.open-page2,
+.open-page3 {
+  display: none;
+  transition: all 200ms ease;
+}
+
+.open-page1 {
+  z-index: 20;
+  position: absolute;
+  height: 100vh;
+  width: 90vw;
+  opacity: 90%;
+  background: linear-gradient(-45deg, #a852ee, #783ce7, #23a6d5);
+  background-blend-mode: lighten;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  transition: transform ease 1s;
+}
+
+.open-page1:hover {
+  transform: translate(0%, -50%);
+}
+
+.menu-page1 {
+  position: absolute;
+  top: 20%;
+  right: -9%;
+  opacity: 100%;
+  background-color: blueviolet;
+  transform: rotateZ(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  border-radius: 18px;
+  width: 200px;
+  height: 60px;
+}
+
+#button-page1 {
+  color: white;
+}
+
+.content-page1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 31;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* Page 2 */
+
+.open-page2 {
+  z-index: 21;
+  position: absolute;
+  height: 100vh;
+  width: 90vw;
+  opacity: 90%;
+  background: linear-gradient(-45deg, #a852ee, #783ce7, #23a6d5);
+  background-blend-mode: lighten;
+  top: 50%;
+  right: 0%;
+  transform: translate(100%, -50%);
+  transition: transform ease 1s;
+}
+
+.open-page2:hover {
+  transform: translate(0%, -50%);
+}
+
+.menu-page2 {
+  position: absolute;
+  bottom: 20%;
+  left: -9%;
+  opacity: 100%;
+  background-color: blueviolet;
+  transform: rotateZ(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  border-radius: 18px;
+  width: 200px;
+  height: 60px;
+}
+
+#button-page2 {
+  color: white;
+}
+
+.content-page2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 31;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* Page 3 */
+
+.open-page3 {
+  z-index: 22;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  opacity: 90%;
+  background: linear-gradient(135deg, #a852ee, #783ce7, #23a6d5);
+  background-blend-mode: lighten;
+  bottom: -100%;
+  right: 0%;
+  transform: translate(0%, 0%);
+  transition: transform ease 1s;
+}
+
+.open-page3:hover {
+  transform: translate(0%, -80%);
+}
+
+.menu-page3 {
+  position: absolute;
+  top: -6%;
+  left: 5%;
+  opacity: 100%;
+  background-color: blueviolet;
+  /* transform: rotateZ(90deg); */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 18px;
+  width: 200px;
+  height: 60px;
+}
+
+#button-page3 {
+  color: white;
+}
+
+.content-page3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 31;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .open-page1,
+  .open-page2,
+  .open-page3 {
+    display: none;
+  }
+}
