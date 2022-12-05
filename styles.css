@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -212,6 +213,7 @@
   width: 100%;
   margin-top: 2.5rem;
   height: 85vh;
+  /* position: static; */
   display: flex;
   flex-flow: row-reverse;
   align-items: center;
@@ -263,7 +265,7 @@
 }
 
 .content-1 {
-  padding: 0 50px;
+  padding: 0 1%;
   width: 100%;
 }
 
@@ -394,6 +396,8 @@
 }
 
 .footer {
+  /* position: relative; */
+  /* bottom: 11%; */
   text-align: center;
   color: white;
   font-family: 'Poppins', sans-serif;
